@@ -1,0 +1,39 @@
+test_remat:
+  embedding_dim: 64
+  vocab_size: 256
+  num_attention_heads: 8
+  block_size: 32
+  num_layers: 2
+  remat: True
+
+test:
+  embedding_dim: 64
+  vocab_size: 256
+  num_attention_heads: 16
+  block_size: 32
+  num_layers: 4
+  remat: False
+
+160m:
+  embedding_dim: 768
+  vocab_size: 50304
+  num_attention_heads: 12
+  block_size: 1024
+  num_layers: 12
+  remat: False
+
+2_8b:
+  embedding_dim: 4096
+  vocab_size: 50304
+  num_attention_heads: 16
+  block_size: 1024
+  num_layers: 12
+  remat: True
+
+6_9_b:
+  embedding_dim: 4096
+  vocab_size: 50304
+  num_attention_heads: 16
+  block_size: 1024
+  num_layers: 32
+  remat: True
