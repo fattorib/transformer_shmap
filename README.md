@@ -52,7 +52,7 @@ python main.py --cfg conf/config.yaml
 
 All configuration is managed in `config.yaml`. By default, this codebase will train a model on [MiniPile](https://arxiv.org/abs/2304.08442). For use in multi-host settings or for larger datasets, swapping the basic dataloader out for something higher performance, and making use of GCP Storage buckets to stream the data in is advised. For reference, I have a working version of this [here](https://github.com/fattorib/ZeRO-transformer/blob/main/main_zero.py).
 
-### 2.8 Parameter Loss Curves
+### 2.8B Parameter Loss Curves
 
 Loss curve for the training of a 2.8B parameter transformer at 1024 ctx on [The Pile](https://arxiv.org/abs/2101.00027). Training was conducted on a mixture of preemptible V2-32 and V3-32 TPUs. Due to the flexibility of `shard_map` resuming training between different device formats is trivial, just change the mesh dimensions and keep training!
 
